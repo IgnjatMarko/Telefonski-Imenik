@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefonski imenik</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Telefonski imenik</h1>
+        <p>Sacuvajte sve brojeve telefona</p>
+        <button type="submit" class="btn">Kupi odmah</button>
+    </header>
+    <div class="container">
+        <form id="columnOne" name="myform">
+            <label for="name">Ime i prezime</label>
+            <input type="text" id="name" class="input" placeholder="Ime i prezime">
+            <label for="telefon">Telefon</label>
+            <input type="text" id="telefon" class="input" placeholder="061-524-5067">
+            <button type="submit" value="submit" id="confirm" class="btn">Dodaj</button>
+        </form>
+        <div id="columnTwo">
+
+            <table>
+                <tr>
+                    <th>Ime i prezime</th>
+                    <th>Telefon</th>
+                    <th>Brisanje</th>
+                    <th>Izmena</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>
+
+<!-- pattern="/^[A-Z][a-z]{2,}(\s[A-Z][a-z]{2,}){1,}$/"
+pattern="/^0(1|2|3|6)[0-9]\/[0-9]{3}-[0-9]{3,4}$/" -->
